@@ -1,33 +1,149 @@
-.App {
-  text-align: center;
+.main_content .header{
+    padding: 10px;
+    margin: 0px;
+    color: #777575;
+    font-weight: 500;
+    padding-bottom: 1.4rem;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+h1,h2,h3,h4,h5,h6{
+    margin:0px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main_content .right_side{
+    padding-left:15px;
 }
-
-.App-link {
-  color: #61dafb;
+.name{
+    font-size: 15px;
+    font-weight: 400;
+    color: #00000078;
+    margin-bottom: -11px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main_content .right_side input{
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    font-size: 13px;
+    color: #989898;
+}
+textarea {
+    width: 93%;
+    margin-top: 0.4rem;
+    border-color: rgba(167, 167, 167, 0.71);
+    border-radius: 4px;
+    font-size: 13px;
+    color: #989898;
+    padding: 10px;
+    padding-bottom: 0px;
   }
-  to {
-    transform: rotate(360deg);
+  .career_obj_main{
+    padding-left:15px;
+    padding-top: 1.1rem;
   }
+  .career_obj_main .career_obj{
+    font-size: 15px;
+    font-weight: 400;
+    color: #00000078;
+}
+.degree_obj_main{
+    padding-left:15px;
+    padding-top: 1.1rem;
+}
+.degree_obj_main{
+    padding-left:15px;
+    padding-top: 1.1rem;
+}
+.degree_obj_main input{
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    font-size: 13px;
+    color: #989898;
+}
+.skills_obj_main{
+    padding-left:15px;
+    padding-top: 1.1rem;
+}
+.button_info{
+    text-align: -webkit-center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+} 
+.name_re{
+    text-align: center;
+    color: #2d2dca;
+    padding-top: 1.5rem;
+    font-size: 15px;
+}
+.header_left{
+    box-shadow: inset 0px -9px 8px -10px #CCC;
+    border-right: 1.5px solid #ccc;
+}
+.header_leftrt{
+    box-shadow: inset 0px -9px 8px -10px #CCC;
+   
+}
+.information_stud{
+    text-align: center;
+    color: #797474;
+    line-height: 1.33;
+}
+ .information_stud .common{
+    font-weight: 500;
+    font-size: 10px;
+}
+.gmail{
+    font-weight: 500;
+    font-size: 10px;
+    color: #4f4ffb;
+    text-decoration: underline;
+}
+.obj{
+    text-shadow: 0 1px 0 white;
+    font-size: 7px;
+    color: #1e1e1e;
+    padding-right: 7px;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+.education_detail .edu{
+   color: #4bbcca;
+   font-size: 15px;
+   padding-bottom: 0.5rem;
+}
+.table{
+    width:95%;
+}
+.table th{
+    font-size: 8px !important;
+    text-align: center;
+    padding:0rem !important;
+    color:#ffff;
+    background:#2f929e;
+}
+.table td{
+    font-size: 8px !important;
+    text-align: center;
+    padding:0rem !important;
+    color:black;
+}
+.skills_info .skill{
+    color: #4bbcca;
+   font-size: 15px;
+   padding-bottom: 0.5rem;
+}
+.skills_info ul li{
+    font-size: 10px;
+}
+.declaration .dec{
+    color: #4bbcca;
+   font-size: 15px;
+}
+.declaration h6{
+    font-size: 8px;
+}
+.signature{
+    float: right;
+    margin-right: 6px;
+}
+.signature h6{
+    font-size: 10px;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
 }
