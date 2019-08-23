@@ -145,7 +145,7 @@ class Resume extends Component {
 
         if(!this.state.name){ 
             alert("Not Successful !! Fill The Form We Need All Detail")
-            window.location.reload();
+            
         }
         else{
             
