@@ -30,7 +30,6 @@ class Resume extends Component {
         let campus = localStorage.getItem('campus');
 
         let skills = localStorage.getItem('skills');
-        var skill = JSON.parse(skills);
 
         let address = localStorage.getItem('address');
         let city = localStorage.getItem('city');
@@ -130,8 +129,9 @@ class Resume extends Component {
         
             console.log(this.state.name)
             var pdf = new jsPDF();
-            
-            pdf.fromHTML("<!DOCTYPE html><html lang='en'><head> <title>Bootstrap Example</title> <meta charset='utf-8'> <meta name='viewport' content='width=device-width, initial-scale=1'> <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css'> <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script> <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js'></script></head><body><div class='container'> <h1  style='color: #2d2dca;margin-left:30rem'>"+this.state.name+"</h1><h4  style='margin-left:30rem;margin-top:-10px'>"+this.state.address+"</h4><h4  style='margin-left:30rem;margin-top:-10px'>"+this.state.city+"</h4><h4  style='margin-left:30rem;margin-top:-10px'>"+this.state.email+"</h4></div></body></html>", 1, 1)
+            var document="<!DOCTYPE html><html lang='en'><head><title>Assignment</title></head><body><div class='container'> <div class='row'><div class='col-md-6 offset-md-3' style='text-align:center !important;'><h1  style='color: #2d2dca;text-align:center !important'>"+this.state.name+"</h1><h4  style='margin-left:30rem;margin-top:-10px'>"+this.state.address+"</h4><h4  style='margin-left:30rem;margin-top:-10px'>"+this.state.city+"</h4><h4  style='margin-left:30rem;margin-top:-10px'>"+this.state.email+"</h4></div></div></div></body></html>";
+
+            pdf.fromHTML(document, 1, 1)
             pdf.save("download.pdf");
          
       }
@@ -145,11 +145,13 @@ class Resume extends Component {
 
         if(!this.state.name){ 
             alert("Not Successful !! Fill The Form We Need All Detail")
+            window.location.reload();
         }
         else{
-            this.printDocument();
+            
             alert("successful")
-            // window.location.reload();
+            this.printDocument();
+            window.location.reload();
             
             localStorage.setItem('name',name);
             localStorage.setItem('email',email);
@@ -423,7 +425,7 @@ class Resume extends Component {
                         <Grid className="button_info" item xs={12} sm={12} md={11} lg={11} xl={11}>
                         
                         <Button variant="contained" color="secondary" onClick={this.handleSubmit}>
-                                Submit
+                                Save
                             </Button>   
                         </Grid>
                         

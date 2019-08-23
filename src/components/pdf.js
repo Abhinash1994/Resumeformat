@@ -25,7 +25,6 @@ class Pdf extends Component {
         let campus = localStorage.getItem('campus');
 
         let skills = localStorage.getItem('skills');
-        var skill = JSON.parse(skills);
 
         let address = localStorage.getItem('address');
         let city = localStorage.getItem('city');
@@ -48,7 +47,7 @@ class Pdf extends Component {
           <Grid item xs={12} >
               <Grid container style={{padding:'10px'}}>
                   <Grid className="header_left" item xs={10} sm={10} md={10} lg={10} xl={10}
-                  style={this.state.name==false?{display:'none'}:{display:'block'}}>
+                  style={this.state.name===false?{display:'none'}:{display:'block'}}>
                      <div className="information_stud">
                         <h4 className="name_re">{this.state.name}</h4>
                         <h5 className="common">{this.state.address}</h5>
@@ -95,7 +94,8 @@ class Pdf extends Component {
                       <div className="skills_info">
                             <h4 className="skill">SKILLS</h4>
                             <ul>
-                                <li>Node</li>
+                                
+                                <li>{this.state.skills}</li>
                                 <li>MongoDb</li>
                                 <li>Reactjs</li>
                                 <li>Angularjs</li>
